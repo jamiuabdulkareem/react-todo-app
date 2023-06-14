@@ -1,13 +1,117 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #ddd;
+}
+
+.header {
+  max-width: 40%;
+  margin: 3rem auto;
+  text-align: center;
+  background-color: #e14d2a;
+  color: #fff;
+}
+
+.header p {
+  font-size: 1.6rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header a:hover {
+  color: #c30707;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 6.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 3px 13px -2px rgba(0, 0, 0, 0.46);
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2d0f08;
+  text-align: center;
+}
+
+.task__form {
+  margin-bottom: 3.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.task__input {
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: 0.5px solid #43170d;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+.task__btn {
+  border: none;
+  /* background-color: #fff; */
+  cursor: pointer;
+  background-color: #e14d2a;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.task__btn--icon {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.task__list {
+  list-style: none;
+  font-weight: 500;
+}
+
+.task__list--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-top: 1.2rem;
+  border-bottom: 1px solid #43170d;
+}
+
+.task__list:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* .task__list--item > p {
+  font-weight: 500;
+  text-transform: capitalize;
+} */
+
+.delete__btn {
+  display: inline-block;
+  color: #c30707;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
